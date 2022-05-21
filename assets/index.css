@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@200&display=swap');
+/* https://coolors.co/2e3532-e0e2db-d2d4c8-1a1d1c-3da5d9 */
+
+body {
+  background: #D2D4C8;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  left: 0;
+  padding: 10px 90px;
+  position: fixed;
+  top: 0;
+  transition: 0.5s ease-out;
+  width: 100%;
+}
+
+nav .logo {
+  float: left;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #2E3532;
+  transition: 0.5s ease-out;
+  animation: fade 1s;
+}
+
+.about-and-others {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-lists {
+  line-height: 60px;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #2E3532;
+  border-radius: 20px;
+  transition: 0.5s ease-out;
+  animation: fade 1s;
+}
+
+.nav-lists:hover {
+  font-size: 18px;
+  transition: 0.5s ease-out;
+}
+
+.blogs {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.blogs:focus + .dropdown {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(10px);
+}
+
+.dropdown {
+  background-color: #2e3532;
+  list-style-type: none;
+  padding-left: 5px;
+  position: absolute;
+  transition: 0.5s ease-out;
+  top: 75px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+.dropdown li {
+  margin: 0 auto 15px;
+}
+
+.dropdown li:nth-child(1) { /* selects the first element of li siblings */
+  margin-top: 10px;
+}
+
+.dropdown li a {
+  color: #e0e2db;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.hi-text {
+  animation: fade 2s;
+  font-size: 64px;
+  margin: 12%;
+}
+
+.my-main-photo {
+  animation: myPhoto 1.5s;
+  height: 700px;
+  left: 65%;
+  position: absolute;
+  top: 10%;
+  z-index: -1;
+}
+
+.main-container {
+  background-color: #e0e2db;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #2E3532;
+  display: flex;
+  flex-direction: column;
+  height: 1500px;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 100px auto;
+  margin-top: 320px;
+  text-align: center;
+  
+}
+
+.pencil {
+  position: static;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.main-container h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.see-more {
+  align-items: flex-end;
+  color: #2e3532;
+  font-size: 20px;
+  margin: 20px auto;
+  text-decoration: none;
+}
+
+footer {
+  height: 180px;
+  background-color: #2E3532;
+  padding-top: 20px;
+  color: #E0E2DB;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e0e2db;
+  margin: 0 50px;
+}
+
+footer div {
+  position: relative;
+  top: 120px;
+  transition: all 0.5s ease-out;
+}
+
+footer a:hover {
+  color: #D2D4C8;
+  transition: all 0.5s ease-in;
+}
+
+#go-to-up {
+  position: fixed;
+  background-color: #2e3532;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  display: none;
+}
+
+#go-to-up img {
+  height: 60px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes myPhoto {
+  from {
+    opacity: 0;
+    left: 70%;
+  }
+
+  to {
+    opacity: 1;
+    left: 65%;
+  }
+}
+
+/* portofolio.html */
+
+.my-profile-picture {
+  margin: 20px auto;
+  text-align: center;
+}
+
+body .my-profile-picture img {
+  height: 200px;
+}
