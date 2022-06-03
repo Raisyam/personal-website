@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*------------------TAG-----------------*/
+
+body {
+  background-image: linear-gradient(to right, #03071e, #d62828);
+  margin: 0;
+  overflow-y: hidden;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  align-items: center; /* this is not working */
+  justify-content: center;
+}
+
+button {
+  border-radius: 25px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  color: rgb(14, 14, 14);
+}
+
+/*-----------------ID-------------------*/
+
+#first-div {
+  min-width: 286px;
+  width: 1366px;
+  margin: 20px;
+}
+
+#time-remaining {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/*-----------------CLASS----------------*/
+
+
+
+.glassmorphism-effect1 {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 40px;
+  height: 35em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glassmorphism-effect2 {
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 40px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 250px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.button-div {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.main-button {
+  padding: 20px 5%;
+}
+
+.inline-block-display {
+  display: inline-block;
+}
+
+.timer-box {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-number {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.timer-text {
+  font-size: 20px;
+  margin: 30px 30px;
+}
+
+.quotes {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 200px;
+  width: 10%;
+  color: honeydew;
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif;
+  /*border: 2px solid greenyellow;*/
+}
+
+.backdrop {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.confirmation-box1 {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 200px;
+  width: 500px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 15% auto;
+}
+
+.confirmation-box2 {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100px;
+  width: 500px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.confirmation-button-div {
+  margin-top: 15px;
+}
+
+.confirmation-button {
+  padding: 20px 80px;
+  margin: 0 10px;
+}
+
+.badge-box1 {
+  width: 500px;
+  height: 688px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 40px auto;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* biar scrollbarnya hilang (Internet Explorer 10+)*/
+  scrollbar-width: none; /* biar scrollbarnya hilang (Firefox)*/
+}
+
+.badge-box1::-webkit-scrollbar {
+  display: none; /* biar scrollbarnya hilang (Safari and Chrome)*/
+}
+
+.badge-box2 {
+  width: 450px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+.badge-text {
+  margin: 5px 20px;
+}
+
+.progress-bar1 {
+  width: 420px;
+  height: 20px;
+  background-color: rgba(128, 128, 128, 0.4);
+  margin: 25px auto;
+  border-radius: 40px;
+}
+
+.progress-bar2 {
+  width: 30%;
+  height: 20px;
+  background-image: linear-gradient(to right, #03071e, #d62828);
+  margin: 0;
+  border-radius: 40px;
+  color: honeydew;
+  font-size: 17px;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  .timer-number {
+    font-size: 50px;
+  }
+
+  .timer-text {
+    font-size: 20px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timer-box {
+    flex-wrap: wrap;
+  }
+
+  .quotes {
+    font-size: 16px;
+  }
+
+  .glassmorphism-effect2 {
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+
+  #time-remaining {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 1064px) {
+  .timer-number {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .timer-text {
+    margin: 10px 10px;
+  }
+
+  .glassmorphism-effect2 {
+    height: 300px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 428px) {
+  .timer-number {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1014px) {
+  .timer-text {
+    margin: 20px 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 925px) {
+  .glassmorphism-effect2 {
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+}

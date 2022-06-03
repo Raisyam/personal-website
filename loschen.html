@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/loschen.css">
+    <link rel="icon" href="img/favicon-loschen.png">
+
+    <title>LOSCHEN - Erase Your Bad Habits</title>
+  </head>
+  <body>
+    <div id="first-div" class="glassmorphism-effect1">
+      <div class="glassmorphism-effect2">
+        <div class="timer-box">
+          
+          <div>
+            <div class="inline-block-display timer-text">
+              <div id="days" class="inline-block-display timer-number">00</div>
+              days
+            </div>
+            
+            <div class="inline-block-display timer-text">
+              <div id="hours" class="inline-block-display timer-number">00</div>
+              hours
+            </div>
+          </div>
+          
+          <div>
+            <div class="inline-block-display timer-text">
+              <div id="minutes" class="inline-block-display timer-number">00</div>
+              minutes
+            </div>
+            
+            <div class="inline-block-display timer-text">
+              <div id="seconds" class="inline-block-display timer-number" >00</div>
+              seconds
+            </div>
+          </div>
+        </div>
+
+        <div id="time-remaining">1200s to Day 4</div>
+      </div>
+
+      <div id="quotes" class="quotes" onclick="changeQuotes()"></div>
+
+      <div class="button-div">
+        <button class="main-button" onclick="resetConfirmation();">Relapse</button>
+        <button class="main-button" onclick="Badges();">Badges</button>
+      </div>
+    </div>
+
+    <div id="popup-place"></div>
+
+    <script src="js/loschen.js"></script>
+  </body>
+</html>
