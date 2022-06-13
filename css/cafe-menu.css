@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Vollkorn:ital,wght@0,700;1,500&display=swap');
+
+body {
+  background-image: url(../img/beans.jpg);
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+.established {
+  font-weight: 400;
+  font-family: "Courier Prime", sans-serif;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: #E1B693;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 10px dotted #28130B;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: #CBA28D;
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+h1, h2 {
+  font-family: "Vollkorn", serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.125rem;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: brown;
+}
